@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Parse Inc. All rights reserved.
 //
 
-@interface PFProductsViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface PFProductsViewController : PFQueryTableViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
+- (id)initWithStyle:(UITableViewStyle)style;
 @end

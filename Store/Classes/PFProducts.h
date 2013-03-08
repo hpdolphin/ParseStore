@@ -6,13 +6,6 @@
 //  Copyright (c) 2013 Parse Inc. All rights reserved.
 //
 
-typedef enum {
-    PFProductNameShirt,
-    PFProductNameHoodie,
-    PFProductNameMug
-} PFProductName;
-
 @interface PFProducts : NSObject
-+ (NSArray *)productInfo;
 + (NSArray *)sizes;
 @end

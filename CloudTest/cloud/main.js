@@ -1,9 +1,9 @@
 /* Initialize the Stripe and Mailgun Cloud Modules */
 var Stripe = require('stripe');
-Stripe.initialize(''); // fill in your Stripe secret key.
+Stripe.initialize('');
 
 var Mailgun = require('mailgun');
-Mailgun.initialize("", ""); // fill in your MailGun account and key.
+Mailgun.initialize("", "");
 
 /*
  * Purchase an item from the Parse Store using the Stripe

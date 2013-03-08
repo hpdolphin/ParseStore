@@ -12,7 +12,7 @@
 
 @interface PFCheckoutViewController ()
 
-@property (assign) PFProductName productName;
+@property (nonatomic) PFObject *product;
 @property (nonatomic, copy) NSString *size;
 @property (nonatomic, strong) NSDictionary *shippingInfo;
 @property (nonatomic, strong) STPCheckoutView *checkoutView;
@@ -27,9 +27,9 @@
 
 #pragma mark - Life cycle
 
-- (id)initWithProductName:(PFProductName)otherProductName size:(NSString *)otherSize shippingInfo:(NSDictionary *)otherShippingInfo {
+- (id)initWithProduct:(PFObject *)product size:(NSString *)otherSize shippingInfo:(NSDictionary *)otherShippingInfo {
     if (self = [super init]) {
-        self.productName = otherProductName;
+        self.product = product;
         self.size = otherSize;
         self.shippingInfo = otherShippingInfo;
     }
@@ -144,7 +144,7 @@
     self.hud.labelText = @"Charging...";
     
     NSDictionary *productInfo = @{
-                                  @"itemName": [PFProducts productInfo][self.productName][@"internalName"],
+                                  @"itemName": self.product[@"name"],
                                   @"size": self.size ?: @"N/A",
                                   @"cardToken": token.tokenId,
                                   @"name": self.shippingInfo[@"name"],
@@ -165,7 +165,7 @@
                                                           otherButtonTitles:nil] show];
                                         
                                     } else {
-                                        PFFinishViewController *finishController = [[PFFinishViewController alloc] initWithProductName:self.productName];
+                                        PFFinishViewController *finishController = [[PFFinishViewController alloc] initWithProduct:self.product];
                                         [self.navigationController pushViewController:finishController animated:YES];
                                     }
                                 }];

@@ -7,5 +7,5 @@
 //
 
 @interface PFShippingViewController : UITableViewController <UITextFieldDelegate>
-- (id)initWithProductName:(PFProductName)productName size:(NSString *)size;
+- (id)initWithProduct:(PFObject *)product size:(NSString *)size;
 @end

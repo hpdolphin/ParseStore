@@ -9,5 +9,5 @@
 #import "STPCheckoutView.h"
 
 @interface PFCheckoutViewController : UIViewController <STPCheckoutDelegate>
-- (id)initWithProductName:(PFProductName)otherProductName size:(NSString *)otherSize shippingInfo:(NSDictionary *)otherShippingInfo;
+- (id)initWithProduct:(PFObject *)product size:(NSString *)size shippingInfo:(NSDictionary *)otherShippingInfo;
 @end

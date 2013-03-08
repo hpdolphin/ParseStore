@@ -9,17 +9,16 @@
 #import "PFFinishViewController.h"
 
 @interface PFFinishViewController ()
-@property (assign) PFProductName productName;
+@property (nonatomic, strong) PFObject *product;
 @end
 
 @implementation PFFinishViewController
 
-
 #pragma mark - Life cycle
 
-- (id)initWithProductName:(PFProductName)otherProductName {
+- (id)initWithProduct:(PFObject *)product {
     if (self = [super init]) {
-        self.productName = otherProductName;
+        self.product = product;
     }
     return self;
 }
@@ -64,7 +63,7 @@
     [self.view addSubview:congratulationsLabel];
     
     UILabel *ownerLabel = [[UILabel alloc] init];
-    ownerLabel.text = [NSString stringWithFormat:@"You are now the proud owner of\na Parse %@.", [PFProducts productInfo][self.productName][@"name"]];
+    ownerLabel.text = [NSString stringWithFormat:@"You are now the proud owner of\na Parse %@.", self.product[@"description"]];
     ownerLabel.numberOfLines = 2;
     ownerLabel.textAlignment = NSTextAlignmentCenter;
     ownerLabel.backgroundColor = [UIColor clearColor];

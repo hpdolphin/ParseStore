@@ -7,5 +7,5 @@
 //
 
 @interface PFFinishViewController : UIViewController
-- (id)initWithProductName:(PFProductName)otherProductName;
+- (id)initWithProduct:(PFObject *)product;
 @end

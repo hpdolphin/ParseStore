@@ -26,7 +26,7 @@ typedef enum {
 } PFAddressRow;
 
 @interface PFShippingViewController ()
-@property (assign) PFProductName productName;
+@property (nonatomic, strong) PFObject *product;
 @property (nonatomic, copy) NSString *size;
 @property (nonatomic, strong) UITextField *nameField;
 @property (nonatomic, strong) UITextField *emailField;
@@ -48,10 +48,10 @@ typedef enum {
 
 #pragma mark - Life cycle
 
-- (id)initWithProductName:(PFProductName)otherProductName size:(NSString *)otherSize {
+- (id)initWithProduct:(PFObject *)product size:(NSString *)size {
     if (self = [super initWithStyle:UITableViewStyleGrouped]) {
-        self.productName = otherProductName;
-        self.size = otherSize;
+        self.product = product;
+        self.size = size;
         [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Shipping"];
         self.tableView.backgroundView = nil;
         self.tableView.backgroundColor = [UIColor colorWithRed:249.0f/255.0 green:252.0f/255.0f blue:253.0f/255.0f alpha:1.0f];
@@ -169,7 +169,7 @@ typedef enum {
                                        @"address": self.addressField.text ?: @"",
                                        @"zip": self.postalCodeField.text ?: @"",
                                        @"cityState": self.cityStateField.text ?: @"" };
-        UIViewController *checkoutController = [[PFCheckoutViewController alloc] initWithProductName:self.productName size:self.size shippingInfo:shippingInfo];
+        UIViewController *checkoutController = [[PFCheckoutViewController alloc] initWithProduct:self.product size:self.size shippingInfo:shippingInfo];
         [self.navigationController pushViewController:checkoutController animated:YES];
     }
 }
@@ -201,18 +201,16 @@ typedef enum {
     [headerView addSubview:backButton];
     x += backButtonImage.size.width + 15.0f;
     
-    NSDictionary *info = [PFProducts productInfo][self.productName];
-    NSString *internalName = info[@"internalName"];
-    UIImage *productImage = [UIImage imageNamed:internalName];
-    UIImageView *productImageView = [[UIImageView alloc] initWithImage:productImage];
-    productImageView.contentMode = UIViewContentModeScaleAspectFill;
-    productImageView.frame = CGRectMake(x, 0.0f, productImage.size.width - 40.0f, 94.0f);
+    PFImageView *productImageView = [[PFImageView alloc] init];
+    productImageView.file = self.product[@"image"];
+    productImageView.contentMode = UIViewContentModeScaleAspectFit;
+    productImageView.frame = CGRectMake(x, 0.0f, 120.0f - 40.0f, 94.0f);
     productImageView.clipsToBounds = YES;
     [headerView addSubview:productImageView];
     x += productImageView.frame.size.width + 5.0f;
     
     UILabel *priceLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    priceLabel.text = [NSString stringWithFormat:@"$%d",[info[@"price"] intValue]];
+    priceLabel.text = [NSString stringWithFormat:@"$%d",[self.product[@"price"] intValue]];
     priceLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:20.0f];
     priceLabel.textColor = [UIColor colorWithRed:14.0f/255.0f green:190.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
     priceLabel.shadowColor = [UIColor colorWithWhite:1.0f alpha:0.7f];
@@ -224,7 +222,7 @@ typedef enum {
     [self.view addSubview:priceLabel];
     
     UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    nameLabel.text = info[@"name"];
+    nameLabel.text = self.product[@"description"];
     nameLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18.0f];
     nameLabel.textColor = [UIColor colorWithRed:82.0f/255.0f green:87.0f/255.0f blue:90.0f/255.0f alpha:1.0f];
     nameLabel.shadowColor = [UIColor colorWithWhite:1.0f alpha:0.7f];

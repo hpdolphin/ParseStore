@@ -59,6 +59,7 @@
 		49524E1716E03278000E08B7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1616E03278000E08B7 /* Social.framework */; };
 		49524E1916E0328D000E08B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1816E0328D000E08B7 /* StoreKit.framework */; };
 		49524E1B16E032A1000E08B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */; };
+		496EC84C16E6C3F40076B57C /* PFProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 496EC84B16E6C3F30076B57C /* PFProductTableViewCell.m */; };
 		4999CBF416DD599900C6C8FC /* PFProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4999CBE716DD599900C6C8FC /* PFProductsViewController.m */; };
 		4999CBF516DD599900C6C8FC /* PFStoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4999CBE916DD599900C6C8FC /* PFStoreAppDelegate.m */; };
 		4999CBF916DD599900C6C8FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4999CBEE16DD599900C6C8FC /* main.m */; };
@@ -89,8 +90,6 @@
 		D969D69F16E171BE00135DC1 /* DropdownButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D66C16E171BE00135DC1 /* DropdownButton@2x.png */; };
 		D969D6A016E171BE00135DC1 /* DropdownButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D66D16E171BE00135DC1 /* DropdownButtonPressed.png */; };
 		D969D6A116E171BE00135DC1 /* DropdownButtonPressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D66E16E171BE00135DC1 /* DropdownButtonPressed@2x.png */; };
-		D969D6A216E171BE00135DC1 /* Hoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D66F16E171BE00135DC1 /* Hoodie.png */; };
-		D969D6A316E171BE00135DC1 /* Hoodie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67016E171BE00135DC1 /* Hoodie@2x.png */; };
 		D969D6A416E171BE00135DC1 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67116E171BE00135DC1 /* Icon-72.png */; };
 		D969D6A516E171BE00135DC1 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67216E171BE00135DC1 /* Icon-72@2x.png */; };
 		D969D6A616E171BE00135DC1 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67316E171BE00135DC1 /* Icon-Small-50.png */; };
@@ -105,8 +104,6 @@
 		D969D6AF16E171BE00135DC1 /* IconConfirmation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67C16E171BE00135DC1 /* IconConfirmation@2x.png */; };
 		D969D6B016E171BE00135DC1 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67D16E171BE00135DC1 /* iTunesArtwork.png */; };
 		D969D6B116E171BE00135DC1 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67E16E171BE00135DC1 /* iTunesArtwork@2x.png */; };
-		D969D6B216E171BE00135DC1 /* Mug.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D67F16E171BE00135DC1 /* Mug.png */; };
-		D969D6B316E171BE00135DC1 /* Mug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68016E171BE00135DC1 /* Mug@2x.png */; };
 		D969D6B416E171BE00135DC1 /* Powered.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68116E171BE00135DC1 /* Powered.png */; };
 		D969D6B516E171BE00135DC1 /* Powered@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68216E171BE00135DC1 /* Powered@2x.png */; };
 		D969D6B616E171BE00135DC1 /* Product.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68316E171BE00135DC1 /* Product.png */; };
@@ -115,8 +112,6 @@
 		D969D6B916E171BE00135DC1 /* ShippingHeader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68616E171BE00135DC1 /* ShippingHeader@2x.png */; };
 		D969D6BA16E171BE00135DC1 /* TopBarBg.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68716E171BE00135DC1 /* TopBarBg.png */; };
 		D969D6BB16E171BE00135DC1 /* TopBarBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68816E171BE00135DC1 /* TopBarBg@2x.png */; };
-		D969D6BC16E171BE00135DC1 /* Tshirt.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68916E171BE00135DC1 /* Tshirt.png */; };
-		D969D6BD16E171BE00135DC1 /* Tshirt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D969D68A16E171BE00135DC1 /* Tshirt@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +188,8 @@
 		49524E1616E03278000E08B7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		49524E1816E0328D000E08B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		49524E1A16E032A1000E08B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		496EC84A16E6C3F30076B57C /* PFProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFProductTableViewCell.h; sourceTree = "<group>"; };
+		496EC84B16E6C3F30076B57C /* PFProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFProductTableViewCell.m; sourceTree = "<group>"; };
 		4999CBE616DD599900C6C8FC /* PFProductsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFProductsViewController.h; sourceTree = "<group>"; };
 		4999CBE716DD599900C6C8FC /* PFProductsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFProductsViewController.m; sourceTree = "<group>"; };
 		4999CBE816DD599900C6C8FC /* PFStoreAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFStoreAppDelegate.h; sourceTree = "<group>"; };
@@ -231,8 +228,6 @@
 		D969D66C16E171BE00135DC1 /* DropdownButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DropdownButton@2x.png"; sourceTree = "<group>"; };
 		D969D66D16E171BE00135DC1 /* DropdownButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DropdownButtonPressed.png; sourceTree = "<group>"; };
 		D969D66E16E171BE00135DC1 /* DropdownButtonPressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DropdownButtonPressed@2x.png"; sourceTree = "<group>"; };
-		D969D66F16E171BE00135DC1 /* Hoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hoodie.png; sourceTree = "<group>"; };
-		D969D67016E171BE00135DC1 /* Hoodie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hoodie@2x.png"; sourceTree = "<group>"; };
 		D969D67116E171BE00135DC1 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		D969D67216E171BE00135DC1 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		D969D67316E171BE00135DC1 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -247,8 +242,6 @@
 		D969D67C16E171BE00135DC1 /* IconConfirmation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconConfirmation@2x.png"; sourceTree = "<group>"; };
 		D969D67D16E171BE00135DC1 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		D969D67E16E171BE00135DC1 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		D969D67F16E171BE00135DC1 /* Mug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mug.png; sourceTree = "<group>"; };
-		D969D68016E171BE00135DC1 /* Mug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mug@2x.png"; sourceTree = "<group>"; };
 		D969D68116E171BE00135DC1 /* Powered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Powered.png; sourceTree = "<group>"; };
 		D969D68216E171BE00135DC1 /* Powered@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Powered@2x.png"; sourceTree = "<group>"; };
 		D969D68316E171BE00135DC1 /* Product.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Product.png; sourceTree = "<group>"; };
@@ -257,8 +250,6 @@
 		D969D68616E171BE00135DC1 /* ShippingHeader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShippingHeader@2x.png"; sourceTree = "<group>"; };
 		D969D68716E171BE00135DC1 /* TopBarBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopBarBg.png; sourceTree = "<group>"; };
 		D969D68816E171BE00135DC1 /* TopBarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TopBarBg@2x.png"; sourceTree = "<group>"; };
-		D969D68916E171BE00135DC1 /* Tshirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tshirt.png; sourceTree = "<group>"; };
-		D969D68A16E171BE00135DC1 /* Tshirt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tshirt@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +457,8 @@
 			children = (
 				4999CBE616DD599900C6C8FC /* PFProductsViewController.h */,
 				4999CBE716DD599900C6C8FC /* PFProductsViewController.m */,
+				496EC84A16E6C3F30076B57C /* PFProductTableViewCell.h */,
+				496EC84B16E6C3F30076B57C /* PFProductTableViewCell.m */,
 				4999CBE816DD599900C6C8FC /* PFStoreAppDelegate.h */,
 				4999CBE916DD599900C6C8FC /* PFStoreAppDelegate.m */,
 				4999CBFC16DD628D00C6C8FC /* PFShippingViewController.h */,
@@ -507,8 +500,6 @@
 				D969D66C16E171BE00135DC1 /* DropdownButton@2x.png */,
 				D969D66D16E171BE00135DC1 /* DropdownButtonPressed.png */,
 				D969D66E16E171BE00135DC1 /* DropdownButtonPressed@2x.png */,
-				D969D66F16E171BE00135DC1 /* Hoodie.png */,
-				D969D67016E171BE00135DC1 /* Hoodie@2x.png */,
 				D969D67116E171BE00135DC1 /* Icon-72.png */,
 				D969D67216E171BE00135DC1 /* Icon-72@2x.png */,
 				D969D67316E171BE00135DC1 /* Icon-Small-50.png */,
@@ -523,8 +514,6 @@
 				D969D67C16E171BE00135DC1 /* IconConfirmation@2x.png */,
 				D969D67D16E171BE00135DC1 /* iTunesArtwork.png */,
 				D969D67E16E171BE00135DC1 /* iTunesArtwork@2x.png */,
-				D969D67F16E171BE00135DC1 /* Mug.png */,
-				D969D68016E171BE00135DC1 /* Mug@2x.png */,
 				D969D68116E171BE00135DC1 /* Powered.png */,
 				D969D68216E171BE00135DC1 /* Powered@2x.png */,
 				D969D68316E171BE00135DC1 /* Product.png */,
@@ -533,8 +522,6 @@
 				D969D68616E171BE00135DC1 /* ShippingHeader@2x.png */,
 				D969D68716E171BE00135DC1 /* TopBarBg.png */,
 				D969D68816E171BE00135DC1 /* TopBarBg@2x.png */,
-				D969D68916E171BE00135DC1 /* Tshirt.png */,
-				D969D68A16E171BE00135DC1 /* Tshirt@2x.png */,
 			);
 			name = Resources;
 			path = Store/Resources;
@@ -643,8 +630,6 @@
 				D969D69F16E171BE00135DC1 /* DropdownButton@2x.png in Resources */,
 				D969D6A016E171BE00135DC1 /* DropdownButtonPressed.png in Resources */,
 				D969D6A116E171BE00135DC1 /* DropdownButtonPressed@2x.png in Resources */,
-				D969D6A216E171BE00135DC1 /* Hoodie.png in Resources */,
-				D969D6A316E171BE00135DC1 /* Hoodie@2x.png in Resources */,
 				D969D6A416E171BE00135DC1 /* Icon-72.png in Resources */,
 				D969D6A516E171BE00135DC1 /* Icon-72@2x.png in Resources */,
 				D969D6A616E171BE00135DC1 /* Icon-Small-50.png in Resources */,
@@ -659,8 +644,6 @@
 				D969D6AF16E171BE00135DC1 /* IconConfirmation@2x.png in Resources */,
 				D969D6B016E171BE00135DC1 /* iTunesArtwork.png in Resources */,
 				D969D6B116E171BE00135DC1 /* iTunesArtwork@2x.png in Resources */,
-				D969D6B216E171BE00135DC1 /* Mug.png in Resources */,
-				D969D6B316E171BE00135DC1 /* Mug@2x.png in Resources */,
 				D969D6B416E171BE00135DC1 /* Powered.png in Resources */,
 				D969D6B516E171BE00135DC1 /* Powered@2x.png in Resources */,
 				D969D6B616E171BE00135DC1 /* Product.png in Resources */,
@@ -669,8 +652,6 @@
 				D969D6B916E171BE00135DC1 /* ShippingHeader@2x.png in Resources */,
 				D969D6BA16E171BE00135DC1 /* TopBarBg.png in Resources */,
 				D969D6BB16E171BE00135DC1 /* TopBarBg@2x.png in Resources */,
-				D969D6BC16E171BE00135DC1 /* Tshirt.png in Resources */,
-				D969D6BD16E171BE00135DC1 /* Tshirt@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +685,7 @@
 				49524DF216E0097A000E08B7 /* StripeError.m in Sources */,
 				49524DF516E00B74000E08B7 /* PFCheckoutViewController.m in Sources */,
 				49524DF916E00EBC000E08B7 /* MBProgressHUD.m in Sources */,
+				496EC84C16E6C3F40076B57C /* PFProductTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
