@@ -1,7 +1,10 @@
 {
-    "applications": {
-    }, 
-    "global": {
-        "parseVersion": "1.2.1"
+  "applications": {
+    "_default": {
+      "link":"ParseStore"
     }
+  }, 
+  "global": {
+      "parseVersion": "1.2.1"
+  }
 }
