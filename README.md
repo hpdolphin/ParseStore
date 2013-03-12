@@ -24,7 +24,7 @@
 7. Checkpoint: verify via the data browser that the cloud code is properly deployed.
 8. Checkpoint: run your app in the simulator; test buying using the Stripe test credit card. It should work.
 
-## Set up your Mailgun account (optional) 
+## Set up your mail delivery system (optional) 
 
 1. Create a MailGun account (for sending emails when purchases are made).
 2. Add Mailgun keys to /CloudTest/cloud/main.js
