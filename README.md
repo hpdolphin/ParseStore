@@ -26,7 +26,7 @@
 
 ## Set up your Mailgun account (optional) 
 
-1. Create a MailGun account (for sending email when purchases are made).
+1. Create a MailGun account (for sending emails when purchases are made).
 2. Add Mailgun keys to /CloudTest/cloud/main.js
 3. Deploy the updated code with "parse deploy"
 4. Checkpoint: run your app in the simulator; enter your real email address while making the purchase. It should send you an email.
