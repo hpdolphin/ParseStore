@@ -18,6 +18,7 @@
 1. Create a Stripe account.
 2. Add Stripe test publishable key to /Store/Resources/Development.xcconfig and /Store/Resources/Distribution.xcconfig
 3. Add Stripe test secret key to /CloudTest/cloud/main.js
+333. Install [command line tool](https://parse.com/docs/cloud_code_guide#started-installing)
 4. Using Terminal, cd into the provided CloudTest folder, and run "parse add", then select the ParseStore app you set up
 5. run "parse deploy"
 6. In XCode, choose Clean from the Product menu. 
