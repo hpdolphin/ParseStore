@@ -5,8 +5,8 @@ PARSE_APP_ID=
 PARSE_REST_KEY=
 
 RESPONSE=$(curl --silent --request POST \
-  --header "X-Parse-Application-Id: $PARSE_APP_ID" \
-  --header "X-Parse-REST-API-Key: $PARSE_REST_KEY" \
+  --header "X-Parse-Application-Id: $YLU4wEnQFP7S736XUSYOXu6GXeYzXLqrvFd4FeVL" \
+  --header "X-Parse-REST-API-Key: $u9V4iSubFzauINSOOm5CUutpEJS1BOBXxlbv70D1" \
   --header "Content-Type: image/png" \
   --data-binary '@tshirt.png' \
   https://api.parse.com/1/files/tshirt.png)
