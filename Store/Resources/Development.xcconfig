@@ -9,6 +9,6 @@
 // Please enter Parse App ID, Parse Client key, and Stripe's test publishable key.
 // We recommend that you use a different Parse app for production than test.
 
-PARSE_APPLICATION_ID =
-PARSE_CLIENT_KEY = 
+PARSE_APPLICATION_ID = YLU4wEnQFP7S736XUSYOXu6GXeYzXLqrvFd4FeVL
+PARSE_CLIENT_KEY = bfUQYpwVEBDTPnMGigNOGvAmVzw1rojCguwElKkI
 STRIPE_PUBLISHABLE_KEY = 
