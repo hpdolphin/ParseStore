@@ -3,7 +3,8 @@ var Stripe = require('stripe');
 Stripe.initialize('sk_test_4PsUOBImgrFcQTqhaUFdwhq2');
 
 var Mailgun = require('mailgun');
-Mailgun.initialize("", "");
+Mailgun.initialize("sandbox38a09785448849edb8cef5d1f5d18dc4.mailgun.org", 
+  "key-6szegg14n2bii7ks7zzgjr3ibnsi7an9");
 
 /*
  * Purchase an item from the Parse Store using the Stripe
