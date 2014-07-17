@@ -1,8 +1,8 @@
 # This file bootstraps the products data on Parse for the Parse Store app.
 # You should replace PARSE_APP_ID and PARSE_REST_KEY with the ones from your own app.
 
-PARSE_APP_ID=
-PARSE_REST_KEY=
+PARSE_APP_ID=YLU4wEnQFP7S736XUSYOXu6GXeYzXLqrvFd4FeVL
+PARSE_REST_KEY=u9V4iSubFzauINSOOm5CUutpEJS1BOBXxlbv70D1
 
 RESPONSE=$(curl --silent --request POST \
   --header "X-Parse-Application-Id: YLU4wEnQFP7S736XUSYOXu6GXeYzXLqrvFd4FeVL" \
