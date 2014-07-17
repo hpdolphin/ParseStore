@@ -1,6 +1,6 @@
 /* Initialize the Stripe and Mailgun Cloud Modules */
 var Stripe = require('stripe');
-Stripe.initialize('');
+Stripe.initialize('sk_test_4PsUOBImgrFcQTqhaUFdwhq2');
 
 var Mailgun = require('mailgun');
 Mailgun.initialize("", "");
